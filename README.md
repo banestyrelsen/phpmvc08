@@ -1,6 +1,6 @@
 #Installing the framework
 ###Step 1. 
-Clone the framework from https://github.com/banestyrelsen/phpmvc_asdf.git
+Clone the framework from https://github.com/banestyrelsen/phpmvc08.git
 
 ###Step 2. 
 Set access permissions to 777 in the folder site/data. This is to make the database writable.
@@ -86,7 +86,7 @@ to the my-navbar array, where NN is the id of the page and 'Nice title' is the t
     'home' => array('label'=>'About Me', 'url'=>'my'),
     'blog' => array('label'=>'My Blog', 'url'=>'my/blog'),
     'guestbook' => array('label'=>'Guestbook', 'url'=>'my/guestbook'),
-    'MyPage' => array('label'=>'Nice title', 'url'=>'page/view/10'), **<-- Add this line**
+    'MyPage' => array('label'=>'Nice title', 'url'=>'page/view/10'), <-- Add this line
   ),
 
 ------------------------------------------------------------
