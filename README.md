@@ -3,7 +3,7 @@
 Clone the framework from https://github.com/banestyrelsen/phpmvc08.git
 
 ###Step 2. 
-Set access permissions to 777 in the folder site/data. This is to make the database writable.
+Set access permissions to 777 in the folder asdf/site/data. This is to make the database writable.
 
 ###Step 3.  
 Upload the folder to a web server using e.g. FileZilla.
