@@ -68,7 +68,7 @@ If you want to add links to more of your content on the navbar, just add the row
 
 The value of 'url' is the relative path to the content, i.e. the path after asdf/ in the address. 'page1' must be a unique name in the array.
 
-Then set your browser to [your path]/asdf/index.php click module/install to initialize the new link.
+Then set your browser to [your path]/asdf/index.php and click module/install to initialize the new link.
 
 ##Changing the logo
 In the asdf/themes/grid/ folder, replace the logo.png file with a image with the same name.
