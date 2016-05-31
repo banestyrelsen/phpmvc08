@@ -16,7 +16,7 @@ In the asdf folder, edit the .htaccess file (a hidden file) so that the RewriteB
 so that [YOUR PATH] points to the location of the asdf folder on your server.
 
 ###Step 5.
-Navigate to [your path]/asdf/index.php and click module/install to initialize the framework.
+Navigate to [YOUR PATH]/asdf/index.php and click module/install to initialize the framework.
 
 #Customizing the framework
 
