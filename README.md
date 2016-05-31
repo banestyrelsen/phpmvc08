@@ -9,7 +9,11 @@ Set access permissions to 777 in the folder asdf/site/data. This is to make the 
 Upload the folder to a web server using e.g. FileZilla.
 
 ###Step 4. 
-In the asdf folder, edit the .htaccess file (a hidden file) so that the RewriteBase path matches the site's address on the web server. 
+In the asdf folder, edit the .htaccess file (a hidden file) so that the RewriteBase path matches the site's address on the web server. Edit the line
+
+    [YOUR PATH]/asdf
+
+so that [YOUR PATH] points to the location of the asdf folder on your server.
 
 ###Step 5.
 Navigate to [your path]/asdf/index.php and click module/install to initialize the framework.
