@@ -12,7 +12,7 @@ Upload the folder to a web server using e.g. FileZilla.
 In the asdf folder, edit the .htaccess file (a hidden file) so that the RewriteBase path matches the site's address on the web server. 
 
 ###Step 5.
-Navigate to <path>/asdf/index.php and click module/install to initialize the framework.
+Navigate to [your path]/asdf/index.php and click module/install to initialize the framework.
 
 #Customizing the framework
 
@@ -22,28 +22,28 @@ Edit the 'header' and 'footer' values at the bottom of the file asdf/site/config
 For example, to change the header and slogan, change the following:
 
     'menu_to_region' => array('my-navbar'=>'navbar'),
-    'data' => array(
-        'header' => 'Asdf',
-    'slogan' => ' - the Awesome Site Development Framework',
-    'favicon' => 'logo_80x80.png',
-    'logo' => 'logo_80x80.png',
-    'logo_width'  => 80,
-    'logo_height' => 80,
-    'footer' => '<p>Asdf &copy</p>',
-  ),
+        'data' => array(
+            'header' => 'Asdf',
+        'slogan' => ' - the Awesome Site Development Framework',
+        'favicon' => 'logo_80x80.png',
+        'logo' => 'logo_80x80.png',
+        'logo_width'  => 80,
+        'logo_height' => 80,
+        'footer' => '<p>Asdf &copy</p>',
+    ),
 
 to
 
     'menu_to_region' => array('my-navbar'=>'navbar'),
-    'data' => array(
-        'header' => 'New Header!',
-    'slogan' => ' - new slogan!',
-    'favicon' => 'logo_80x80.png',
-    'logo' => 'logo_80x80.png',
-    'logo_width'  => 80,
-    'logo_height' => 80,
-    'footer' => '<p>Asdf &copy</p>',
-  ),
+        'data' => array(
+            'header' => 'New Header!',
+        'slogan' => ' - new slogan!',
+        'favicon' => 'logo_80x80.png',
+        'logo' => 'logo_80x80.png',
+        'logo_width'  => 80,
+        'logo_height' => 80,
+        'footer' => '<p>Asdf &copy</p>',
+    ),
   
   
 ## Changing the navigation menu headers
