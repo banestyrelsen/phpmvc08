@@ -84,9 +84,9 @@ In the 'Modules' tab under 'Enabled controller's, click 'content'.
 ###Step 2.
 Click 'Create new Content' and fill in the fields. 
 
-Title - the title of the blog post
-Key - the post's key
-Content - this is text content of the  blog post
+Title - the title of the blog post.
+Key - the post's key.
+Content - this is text content of the  blog post.
 Type - To create a blog post, type 'post' here (without the quotes).  
 Filter - The type of filter to be used. Available filters are: plain and htmlpurify. plain = no filter. htmlpurify = uses html tags.
 
@@ -101,9 +101,9 @@ In the 'Modules' tab under 'Enabled controller's, click 'content'.
 ###Step 2.
 Click 'Create new Content' and fill in the fields. 
 
-Title - the title of the page
-Key - the post's key
-Content - this is text content of the  blog post
+Title - the title of the page.
+Key - the post's key.
+Content - this is text content of the  blog post.
 Type - To create a page, type 'page' here (without the quotes).
 Filter - The type of filter to be used. Available filters are: plain and htmlpurify. plain = no filter. htmlpurify = uses html tags.
 
