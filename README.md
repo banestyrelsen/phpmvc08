@@ -46,18 +46,29 @@ to
     ),
   
   
-## Changing the navigation menu headers
+## Changing the navigation menu
 In asdf/site/config.php, edit the contents of the my-navbar array. 
 
-For example, if you want to change the 'Modules' navbar title to 'My Modules', change the following row
+###Editing and deleting navbar items
+If, for example, you want to change the 'Guestbook' navbar title to 'My Guestbook', change the following row
 
-    'modules'   => array('label'=>'Modules', 'url'=>'module'),
+    'guestbook' => array('label'=>'Guestbook', 'url'=>'my/guestbook'),
 
 to
 
-    'modules'   => array('label'=>'My Modules', 'url'=>'module'),
-    
-Deleting the row will remove the link from the navbar.
+    'guestbook' => array('label'=>'My Guestbook', 'url'=>'my/guestbook'),
+   
+Deleting the row will remove the 'Guestbook' link from the navbar.
+
+###Adding links
+
+If you want to add links to more of your content on the navbar, just add the row 
+
+    'page1'   => array('label'=>'Test', 'url'=>'page/view/1'),
+
+The value of 'url' is the relative path to the content, i.e. the path after asdf/ in the address. 'page1' must be a unique name in the array.
+
+Then set your browser to [your path]/asdf/index.php click module/install to initialize the new link.
 
 ##Changing the logo
 In the asdf/themes/grid/ folder, replace the logo.png file with a image with the same name.
