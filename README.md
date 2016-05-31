@@ -12,39 +12,63 @@ Upload the folder to a web server using e.g. FileZilla.
 In the asdf folder, edit the .htaccess file (a hidden file) so that the RewriteBase path matches the site's address on the web server. 
 
 ###Step 5.
-Click module/install to initialize the framework.
+Navigate to <path>/asdf/index.php and click module/install to initialize the framework.
 
 #Customizing the framework
 
 ##Changing the site's title and footer
 Edit the 'header' and 'footer' values at the bottom of the file asdf/site/config.php
 
+For example, to change the header and slogan, change the following:
+
+    'menu_to_region' => array('my-navbar'=>'navbar'),
+    'data' => array(
+        'header' => 'Asdf',
+    'slogan' => ' - the Awesome Site Development Framework',
+    'favicon' => 'logo_80x80.png',
+    'logo' => 'logo_80x80.png',
+    'logo_width'  => 80,
+    'logo_height' => 80,
+    'footer' => '<p>Asdf &copy</p>',
+  ),
+
+to
+
+    'menu_to_region' => array('my-navbar'=>'navbar'),
+    'data' => array(
+        'header' => 'New Header!',
+    'slogan' => ' - new slogan!',
+    'favicon' => 'logo_80x80.png',
+    'logo' => 'logo_80x80.png',
+    'logo_width'  => 80,
+    'logo_height' => 80,
+    'footer' => '<p>Asdf &copy</p>',
+  ),
+  
+  
 ## Changing the navigation menu headers
 In asdf/site/config.php, edit the contents of the my-navbar array. 
 
 For example, if you want to change the 'Modules' navbar title to 'My Modules', change the following row
 
-	'modules'   => array('label'=>'Modules', 'url'=>'module'),
+    'modules'   => array('label'=>'Modules', 'url'=>'module'),
 
 to
 
-	'modules'   => array('label'=>'My Modules', 'url'=>'module'),
-	
+    'modules'   => array('label'=>'My Modules', 'url'=>'module'),
+    
 Deleting the row will remove the link from the navbar.
 
 ##Changing the logo
-###Option 1
-In the asdf/themes/grid/ folder, replace the logo.png file with the new logo file of the same name.
-###Option 2
-If you want to use a different name for your logo file, place your logo image file in asdf/themes/grid/ and enter the filename as the value of the 'logo' variable in asdf/site/config.php. 
+In the asdf/themes/grid/ folder, replace the logo.png file with a image with the same name.
 
 ###Changing the site style (colors, fonts etc)
-You can edit the stylesheet in asdf/themes/grid/style.css. 
+Edit the stylesheet in asdf/themes/grid/style.css. 
 
 ##Creating a blog
 
 ###Step 1.
-In the 'About Me' tab, click 'view all'.
+In the 'Modules' tab under 'Enabled controller's, click 'content'.
 
 ###Step 2.
 Click 'Create new Content' and fill in the fields. 
@@ -53,7 +77,7 @@ Title - the title of the blog post
 Key - the post's key
 Content - this is text content of the  blog post
 Type - To create a blog post, type 'post' here (without the quotes).  
-Filter - The type of filter to be used. Plain = no filter.
+Filter - The type of filter to be used. Available filters are: plain and htmlpurify. plain = no filter. htmlpurify = uses html tags.
 
 ###Step 3.
 Click 'Create' to create the blog post. The blog post can now be viewed in the 'My Blog' tab.
@@ -61,7 +85,7 @@ Click 'Create' to create the blog post. The blog post can now be viewed in the '
 ##Creating a page
 
 ###Step 1.
-In the 'About Me' tab, click 'view all'.
+In the 'Modules' tab under 'Enabled controller's, click 'content'.
 
 ###Step 2.
 Click 'Create new Content' and fill in the fields. 
@@ -69,8 +93,8 @@ Click 'Create new Content' and fill in the fields.
 Title - the title of the page
 Key - the post's key
 Content - this is text content of the  blog post
-Type - Leave this blank to create a page.  
-Filter - The type of filter to be used. Plain = no filter.
+Type - To create a page, type 'page' here (without the quotes).
+Filter - The type of filter to be used. Available filters are: plain and htmlpurify. plain = no filter. htmlpurify = uses html tags.
 
 ###Step 3.
 Click 'Create' to create the page. Click 'Content' in the menu bar and the new page will be listed in the bottom of the list. The number is the id of the page.
@@ -78,7 +102,7 @@ Click 'Create' to create the page. Click 'Content' in the menu bar and the new p
 ###Steg 4. 
 To add the page to the horizontal top nav bar, edit asdf/site/config.php and add the line 
 
-	'MyPage' => array('label'=>'Nice title', 'url'=>'page/view/NN'),
+    'MyPage' => array('label'=>'Nice title', 'url'=>'page/view/NN'),
 
 to the my-navbar array, where NN is the id of the page and 'Nice title' is the title you want to appear in the nav bar. For example, if NN is 10, add the line at the end of the array as follows:
 
